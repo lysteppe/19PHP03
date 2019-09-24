@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#account{
+	float: left;
+	padding-left: 27em;
+	width: 30%;
+	height: 500px;
+}
+#login{
+	border: 1px solid #888888;
+	margin: 10px;
+	padding: 10px;
+	height: 360px;
+	padding-left: 5em;
+
+}
+h1{
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	padding-left: 0.5em;
+}
+.fullname input{
+	/*width: 85%;*/
+	height: 25px;
+}
+.birthday{
+	padding-top: 5px;
+}
+.birthday input{
+	width: 50%;
+	margin-left: 0.8em;
+	height: 25px;
+}
+.city{
+	padding-top: 7px;
+	margin-left: 0.1em;
+
+}
+.city select{	
+	height: 25px;
+	margin-left: 2.7em;
+}
+.gender input{
+	vertical-align: middle;
+}
+.gender span {	
+	padding-top: 5px;
+	margin-left: 6px;
+}
+.gender p{
+	float: left;
+	padding-top: 5px;
+	margin-left: 6px;
+}
+#submit{
+	margin-top: 0.5em;
+}
+.submit input{
+	width: 56px;
+	height: 25px;
+	margin: 0.5px;
+	margin-left: 5.5em;
+	float: left;
+}
+.show{
+	width: 100px;
+}
+.slideshow{
+	margin-left: -20em;
+	width: 200px;
+}
+.slideshowimg{
+	padding-left: 10em;
+}
+.slideshow input{
+	padding-left: 1em;
+}
+@media screen and (max-width: 1024px){
+	#account{
+		width: 50%;
+		padding-left: 15em;
+	}
+	#login{
+		width: 90%;
+		height: 350px;
+	}
+	.user input{
+	width: 90%;
+	height: 25px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#account{
+		width: 50%;
+		padding-left: 15em;
+	}
+	#login{
+		width: 90%;
+		height: 350px;
+	}
+	.user input{
+	width: 90%;
+	height: 25px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	#account{
+		width: 59%;
+		padding-left: 8em;
+	}
+	#login{
+		width: 90%;
+		height: 350px;
+	}
+	.user input{
+		width: 90%;
+		height: 25px;
+	}
+}

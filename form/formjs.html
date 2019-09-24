@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="formjs.css">
+	<meta name="viewport" content="width=device-width, initial-scale = 1">
+</head>
+<body>
+	<div id="account">
+		<h1 id="h1"> Registration Form </h1>
+			<div id="login">
+				<form >
+					<div class="fullname">
+						Full Name: <input type="text" name="fullname" id="fullname" value=""/> <br/><br/>
+					</div>
+					<div class="birthday">
+          				Birthday:  <input type="date" name="birthday" id="birthday" value=""/> <br/><br/>
+          			</div>
+          			<div class="city" id="city">
+          				City: <select name="city">
+								<option value="hue">Huế</option>
+								<option value="dn">Đà Nẵng</option>
+								<option value="qn">Quảng Nam</option>
+								<option value="dn" selected>Đà Nẵng</option>
+							</select> <br/><br/>
+          			</div>
+          			<div class="gender" di="gender">
+						<p class="gender"><input type="radio" id="male" checked="checked" name="gender"><span>Male</span></p>
+						<p class="gender"><input type="radio" id="female" checked="checked" name="gender"><span>Female</span></p>
+					</div>
+				</br></br>
+					<div class="submit">
+            			<input type="button" name="login" value="Login" onclick="show()" />
+            		</div>
+            		</br></br>
+				</form>
+				<div id="show">
+						<p id="name"></p>
+						<p id="date"></p>
+						<p id="citys"></p>
+						<p id="gender"></p>
+						
+					</div>
+			</div>
+	</div>
+
+	<script type="text/javascript" src="formjs.js"></script>
+</body>
+</html>

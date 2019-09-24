@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tinh tien dien - SS 18</title>
+	<link rel="stylesheet" type="text/css" href="tiendien.css">
+</head>
+<body>
+
+	<form method="get" accept-charset="utf-8" style="width:600px;margin: 0px auto;" id="info">
+		<h1 id="h1"> Form nhập thông tin tính tiền điện </h1>
+			<div id="thongtin">
+				<div class="form-group">
+					<p>Họ và tên:<span style="color: red">*</span></p>
+					<input class="form-control item" type="text" name="name" id="name" placeholder="Họ và tên" required>
+				</div>	
+				<div class="form-groupnote">
+					<p>Ghi chú:<span style="color: red">*</span></p>
+					<textarea rows="5" cols="20" maxlength="20" name="note" id="note"></textarea>
+				</div></br>
+				<div class="in">
+					<input style=" background: #0099FF" type="button" name="submit" id="submit" value="In">
+					<input style=" background: #0099FF" type="reset" name="submit"  value="reset">
+				</div>
+			</div>	
+			<div id="chiso">
+				<div class="form-group">
+					<p>Ngày đầu kỳ:<span style="color: red">*</span></p>
+					<input class="form-control item" type="date" style="width: 170px;" name="first_date" id="first_date" placeholder="Nhập ngày đầu kỳ" required>
+				</div>
+
+				<div class="form-group">
+					<p>Ngày cuối kỳ:<span style="color: red">*</span></p>
+					<input class="form-control item" type="date" style="width: 170px;" name="last_date" id="last_date" placeholder="Nhập ngày cuối kỳ" required>
+				</div>
+
+				<div class="form-group">
+					<p>Số đầu kỳ:<span style="color: red">*</span></p>
+					<input class="form-control item" type="number" name="top_number" id="top_number" placeholder="Nhập số đầu kỳ" required>
+				</div>
+
+				<div class="form-group">
+					<p>Số cuối kỳ:<span style="color: red">*</span></p>
+					<input class="form-control item" type="number" name="last_number" id="last_number" placeholder="Nhập số cuối kỳ" required>
+				</div>
+			</div>							
+ 	</form>
+
+</br></br>
+ 	<div id="hoadon">
+		<h3>Hóa đơn</h3>
+		<table>
+			<tr>
+				<td class="col1">Họ tên</td>
+				<td ><p id="hd-name"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Ngày đầu kì</td>
+				<td><p id="hd-fdate"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Ngày cuối kì</td>
+				<td><p id="hd-ldate"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Số đầu kì</td>
+				<td><p id="hd-fnum"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Số cuối kì</td>
+				<td><p id="hd-lnum"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Ghi chú</td>
+				<td> <p id="hd-note"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Thành tiền</td>
+				<td><p id="hd-total"></p></td>
+			</tr>
+
+		</table>
+
+	</div>
+ 	
+ 	<script type="text/javascript" src="jquery/jquery-3.4.0.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>	
+	
+	<script src="tiendien.js"></script>
+
+</body>
+</html>
